@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  </head>
+  <body>
+    <h1>Questa è la homepage del sito!</h1>
+    <h2>Benvenuti alla funzione home!</h2>
+
+    {{ articoli }}
+
+    {{ giornalisti }}
+
+    <br>
+
+    <h4>Giornalisti:</h4>
+    {% for giornalista in giornalisti %}
+        <p>{{ giornalista.nome }} {{ giornalista.cognome }}</p>
+    {% endfor %}
+
+    <hr>
+
+    <h4>Articoli:</h4>
+    {% for articolo in articoli %}
+        <p><strong>Titolo:</strong><a href="{{ articolo.get_absolute_url }}">{{ articolo.titolo }}</a></p>
+        <p><strong>Contenuto:</strong>{{ articolo.contenuto }}</p>
+        <p><strong>Autore:</strong>{{ articolo.giornalista }}</p>
+    {% endfor %}
+
+    <br>
+    <hr>
+
+    <h4>Giornalisti:</h4>
+    {% for giornalista in giornalisti %}
+        <p>{{ giornalista.nome }} {{ giornalista.cognome }}</p>
+        <p>Articoli:</p>
+        {% for articolo in giornalista.articoli.all %}
+            <p>{{ articolo.titolo }}</p>
+        {% empty %}
+            <p>{{ giornalista.nome }} non ha scritto alcun articolo!</p>
+        {% endfor %}
+        <hr>
+    {% endfor %}
+  </body>
+</html>

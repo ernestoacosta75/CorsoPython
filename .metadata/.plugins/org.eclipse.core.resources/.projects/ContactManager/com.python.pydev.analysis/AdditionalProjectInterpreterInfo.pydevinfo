@@ -1,0 +1,47 @@
+-- VERSION_5
+-- START DISKCACHE_2
+D:\Corso_Python\.metadata\.plugins\org.eclipse.core.resources\.projects\ContactManager\com.python.pydev.analysis\v2_indexcache
+supplier|1531922180000000000|D:\Corso_Python\ContactManager\src\supplier.py
+-- END DISKCACHE
+-- START DICTIONARY
+12
+4=AddressHolder
+10=Friend.__init__
+1=D:\Corso_Python\ContactManager\src\supplier.py
+5=Friend
+7=Contact.__init__
+2=supplier
+8=LongNameDict
+9=Supplier
+12=MailSender
+11=ContactList
+3=Contact
+6=AddressHolder.__init__
+-- END DICTIONARY
+-- START TREE 1
+8
+add|1|AddressHolder!1^47#7*17@
+con|2|Contact!1^18#7*17@ContactList!1^7#7*17@
+e|1|e!1^80#1*19@
+ema|1|EmailableContact!1^63#7*17@
+fri|1|Friend!1^55#7*17@
+lon|1|LongNameDict!1^32#7*17@
+mai|1|MailSender!1^40#7*17@
+sup|1|Supplier!1^27#7*17@
+-- END TREE
+-- START TREE 2
+13
+__i|3|__init__!3&1^21#9*18@__init__!4&1^48#9*18@__init__!5&1^59#9*18@
+all|1|all_contacts!3&1^19#5*19@
+cit|1|city!6&1^51#9*19@
+cod|1|code!6&1^53#9*19@
+ema|1|email!7&1^24#9*19@
+lon|1|longest_key!8&1^33#9*18@
+nam|1|name!7&1^23#9*19@
+ord|1|order!9&1^28#9*18@
+pho|1|phone!10&1^61#9*19@
+sea|1|search!11&1^9#9*18@
+sen|1|send_mail!12&1^43#9*18@
+sta|1|state!6&1^52#9*19@
+str|1|street!6&1^50#9*19@
+-- END TREE

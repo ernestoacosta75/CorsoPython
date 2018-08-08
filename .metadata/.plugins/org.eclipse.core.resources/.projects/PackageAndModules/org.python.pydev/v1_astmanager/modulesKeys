@@ -1,0 +1,8 @@
+MODULES_MANAGER_V2
+ecommerce.__init__|D:\Corso_Python\PackageAndModules\src\ecommerce\__init__.py
+ecommerce.database|D:\Corso_Python\PackageAndModules\src\ecommerce\database.py
+ecommerce.payments.__init__|D:\Corso_Python\PackageAndModules\src\ecommerce\payments\__init__.py
+ecommerce.payments.authorizenet|D:\Corso_Python\PackageAndModules\src\ecommerce\payments\authorizenet.py
+ecommerce.payments.paypal|D:\Corso_Python\PackageAndModules\src\ecommerce\payments\paypal.py
+ecommerce.products|D:\Corso_Python\PackageAndModules\src\ecommerce\products.py
+main|D:\Corso_Python\PackageAndModules\src\main.py

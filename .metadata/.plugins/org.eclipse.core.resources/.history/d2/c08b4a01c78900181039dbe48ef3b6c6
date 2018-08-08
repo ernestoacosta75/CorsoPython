@@ -1,0 +1,8 @@
+'''
+Created on 17 lug 2018
+
+@author: Administrator
+'''
+import datetime
+
+# Store the next available id for all new notes

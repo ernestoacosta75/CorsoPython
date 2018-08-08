@@ -1,0 +1,24 @@
+-- VERSION_5
+-- START DISKCACHE_2
+D:\Corso_Python\.metadata\.plugins\org.eclipse.core.resources\.projects\PackageAndModules\com.python.pydev.analysis\v2_indexcache
+ecommerce.payments.paypal|1531825242000000000|D:\Corso_Python\PackageAndModules\src\ecommerce\payments\paypal.py
+ecommerce.__init__|1531825112000000000|D:\Corso_Python\PackageAndModules\src\ecommerce\__init__.py
+ecommerce.payments.authorizenet|1531825258000000000|D:\Corso_Python\PackageAndModules\src\ecommerce\payments\authorizenet.py
+main|1531825136000000000|D:\Corso_Python\PackageAndModules\src\main.py
+ecommerce.products|1531832796000000000|D:\Corso_Python\PackageAndModules\src\ecommerce\products.py
+ecommerce.database|1531833244000000000|D:\Corso_Python\PackageAndModules\src\ecommerce\database.py
+ecommerce.payments.__init__|1531825180000000000|D:\Corso_Python\PackageAndModules\src\ecommerce\payments\__init__.py
+-- END DISKCACHE
+-- START DICTIONARY
+2
+1=D:\Corso_Python\PackageAndModules\src\ecommerce\database.py
+2=ecommerce.database
+-- END DICTIONARY
+-- START TREE 1
+2
+dat|2|Database!1^6#7*17@database!1^9#1*19@
+ini|1|initialize_database!1^11#5*18@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

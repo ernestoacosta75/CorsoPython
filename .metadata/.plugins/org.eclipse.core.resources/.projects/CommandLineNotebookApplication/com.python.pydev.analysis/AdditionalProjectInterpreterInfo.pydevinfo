@@ -1,0 +1,46 @@
+-- VERSION_5
+-- START DISKCACHE_2
+D:\Corso_Python\.metadata\.plugins\org.eclipse.core.resources\.projects\CommandLineNotebookApplication\com.python.pydev.analysis\v2_indexcache
+command_option|1531834748000000000|D:\Corso_Python\CommandLineNotebookApplication\src\command_option.py
+menu|1531905386000000000|D:\Corso_Python\CommandLineNotebookApplication\src\menu.py
+notebook|1531907862000000000|D:\Corso_Python\CommandLineNotebookApplication\src\notebook.py
+-- END DISKCACHE
+-- START DICTIONARY
+10
+3=D:\Corso_Python\CommandLineNotebookApplication\src\menu.py
+8=Menu.__init__
+10=Notebook.__init__
+7=Notebook
+6=Note
+9=Note.__init__
+5=Menu
+4=menu
+1=D:\Corso_Python\CommandLineNotebookApplication\src\notebook.py
+2=notebook
+-- END DICTIONARY
+-- START TREE 1
+3
+las|1|last_id!1^9#1*19@
+men|1|Menu!3^9#7*33@
+not|2|Note!1^11#7*17@Notebook!1^35#7*17@
+-- END TREE
+-- START TREE 2
+17
+__i|3|__init__!5&3^11#9*34@__init__!6&1^15#9*18@__init__!7&1^39#9*18@
+_fi|1|_find_note!7&1^71#9*18@
+add|1|add_note!5&3^55#9*34@
+cho|1|choices!8&3^19#9*35@
+cre|1|creation_date!9&1^21#9*19@
+dis|1|display_menu!5&3^21#9*34@
+id|1|id!9&1^25#9*19@
+mat|1|match!6&1^27#9*18@
+mem|1|memo!9&1^19#9*19@
+mod|3|modify_note!5&3^60#9*34@modify_memo!7&1^47#9*18@modify_tags!7&1^56#9*18@
+new|1|new_note!7&1^43#9*18@
+not|2|notebook!8&3^12#9*35@notes!10&1^41#9*19@
+qui|1|quit!5&3^70#9*34@
+run|1|run!5&3^32#9*34@
+sea|2|search_notes!5&3^50#9*34@search!7&1^65#9*18@
+sho|1|show_notes!5&3^43#9*34@
+tag|1|tags!9&1^20#9*19@
+-- END TREE
