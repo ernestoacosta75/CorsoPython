@@ -3,5 +3,21 @@
 {% block head_title %}{{ block.super }} | Libreria {% endblock head_title %}
 
 {% block content %}
-
+    <div class="container">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-4">
+          <h1>La nostra libreria</h1>
+          <br>
+          {% for libro in libri %}
+            <p>Titolo: {{ libro.titolo }}</p>
+            <p>Autore: {{ libro.autore }}</p>
+            <p>Genere: {% for gender in libro.genere.all %} {{ gender }} {% endfor %}</p>
+            <p>ISBN: {{ libro.isbn }}</p>
+            <br>
+          {% endfor %}
+        </div>
+        <div class="col-6"></div>
+      </div>
+    </div>
 {% endblock content %}
