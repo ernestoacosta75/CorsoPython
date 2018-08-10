@@ -11,6 +11,10 @@ class Giornalista(models.Model):
     def __str__(self):
         return self.nome + " " + self.cognome
 
+    class Meta():
+        verbose_name = "Giornalista"
+        verbose_name_plural = "Giornalisti"
+
 class Articolo(models.Model):
     """ Il modello generico di un articolo di news """
     titolo = models.CharField(max_length=100) #Alcuni campi necessitano di parametri obbligatori!
@@ -21,4 +25,8 @@ class Articolo(models.Model):
         return self.titolo
 
     def get_absolute_url(self):
-        return reverse("articolo_detail", kwargs={"pk": self.pk})    
+        return reverse("articolo_detail", kwargs={"pk": self.pk})
+
+    class Meta():
+        verbose_name = "Articolo"
+        verbose_name_plural = "Articoli"

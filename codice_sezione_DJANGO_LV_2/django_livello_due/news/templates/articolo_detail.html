@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="it" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Dettaglio Articolo: {{ articolo.titolo }}</title>
-  </head>
-  <body>
+
+{% extends 'base.html' %}
+
+{% block head_title %}{{ block.super }} | {{ articolo.titolo }}{% endblock head_title %}
+
+{% block content %}
+
     <h1>{{ articolo.titolo }}</h1>
     <h3>{{ articolo.contenuto }}</h3>
     <h5>Autore: {{ articolo.giornalista }}</h5>
-  </body>
-</html>
+
+{% endblock content %}
