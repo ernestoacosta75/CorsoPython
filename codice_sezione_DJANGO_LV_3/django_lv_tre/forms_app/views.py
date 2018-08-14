@@ -13,6 +13,7 @@ def homepage(request):
 #     return render(request, "forms_app/contatto.html", context)
 
 def contatti(request):
+    
     if request.method == "POST":
         form = ContattoForm(request.POST)
         if form.is_valid():
@@ -22,7 +23,7 @@ def contatti(request):
             print("E-MAIL: ", form.cleaned_data["email"])
             print("CONTENUTO: ", form.cleaned_data["contenuto"])
 
-            return HttpResponse("<h1>Grazie per averci contattato!</h1>")             
+            return HttpResponse("<h1>Grazie per averci contattato!</h1>")
     else:
         form = ContattoForm()
 

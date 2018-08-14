@@ -8,8 +8,8 @@
   <body>
     <div class="container">
       <h1>Compila il form di contatto, ti risponderemo quanto prima!</h1>
-      <form class="" action="" method="post">
-          {% csrf_token %} 
+      <form class="" action="" method="post" novalidate>
+          {% csrf_token %}
           {{ form.as_p }}
           <input type="submit" class="btn btn-danger" value="Invia">
       </form>
