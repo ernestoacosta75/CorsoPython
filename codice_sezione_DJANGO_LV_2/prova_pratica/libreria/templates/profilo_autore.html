@@ -1,0 +1,28 @@
+
+{% extends 'base.html' %}
+
+{% block head_title %}{{ block.super }} | {{ autore.nome }} {{ autore.cognome }} {% endblock head_title %}
+
+{% block content %}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-4">
+        <h3>Autore: {{ autore.nome }} {{ autore.cognome }}</h3>
+        <h5>Nazione: {{ autore.nazione }}</h5>
+        <br>
+        {% for libro in autore.libri.all %}
+          <p><span id="testataRisalto" class="font-weight-bold">Titolo:</span> {{ libro.titolo }}</p>
+          <p><span id="testataNormale" class="font-weight-bold">Genere:</span> {% for gender in libro.genere.all %} {{ gender }} {% endfor %}</p>
+          <p><span id="testataRisalto" class="font-weight-bold">ISBN:</span> {{ libro.isbn }}</p>
+        {% empty %}
+            <p>{{ autore.nome }} non ha scritto alcun libro!</p>
+        {% endfor %}
+        <br>
+    </div>
+    <div class="col-6"></div>
+  </div>
+  </div>
+
+{% endblock content %}

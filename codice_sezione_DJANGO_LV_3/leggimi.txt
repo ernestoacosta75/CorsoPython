@@ -1,0 +1,5 @@
+superuser:               admin
+
+password_sezione:        qweqweqwe
+
+password_prova_pratica:  asdasdasd
