@@ -3,10 +3,10 @@ from django.core.exceptions import ValidationError
 from django.core import validators
 
 class ContattoForm(forms.Form):
-    nome = forms.CharField()
-    cognome = forms.CharField()
-    email = forms.EmailField()
-    contenuto = forms.CharField(widget=forms.Textarea(attrs={"placeholder": "Area Testuale! Scrivi pure!"}),
+    nome = forms.CharField(widget=forms.TextInput(attrs={"class": "form-control"}))
+    cognome = forms.CharField(widget=forms.TextInput(attrs={"class": "form-control"}))
+    email = forms.EmailField(widget=forms.TextInput(attrs={"class": "form-control"}))
+    contenuto = forms.CharField(widget=forms.Textarea(attrs={"placeholder": "Area Testuale! Scrivi pure!", "class": "form-control"}),
                                 validators=[validators.MinLengthValidator(10)])
 
     def clean_contenuto(self):

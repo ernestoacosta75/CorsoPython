@@ -15,9 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from forms_app import views as forms_app_views
+from forms_app.views import contatti, homepage
+from blog.views import creaPostView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('forms_app/', include('forms_app.urls'))
+    path('', homepage, name='homepage'),
+    path('contattaci/', contatti, name='contatti'),
+    path('crea-post/', creaPostView, name='crea_post'),
+]
+
+urlpatterns += [
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
