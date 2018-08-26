@@ -19,5 +19,6 @@ from forms_app import views as forms_app_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('forms_app/', include('forms_app.urls'))
+    path('', forms_app_views.homepage, name='homepage'),
+    path('contattaci/', forms_app_views.contatti, name='contatti')
 ]
